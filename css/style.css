@@ -1,0 +1,282 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+
+    /*Header*/
+
+header{
+    margin-bottom: 50px;
+}
+
+header #divlogo{
+    width: 250px;
+    margin: 35px 0 0 30px;
+    float: left;
+}
+header #divlogo img{
+    width: 100%;
+}
+header nav ul{
+    float: right ;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 50px 40px 0 0 ;
+    cursor: pointer;
+    color: #848484;
+}
+
+    /*Painel*/
+    
+#painel #painel1{
+    text-align: center;
+}
+#painel #painel1 > div{
+    width: 15%;
+    height: 180px;
+    margin: 5px;
+    margin-bottom: 0;
+    background-color: #CCCCCC;
+    display: inline-block;
+}
+#painel #painel2{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+#painel #painel2 div{
+    width: 300px;
+    height: 200px;
+    background-color: #576975;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -10px auto 10px auto;
+    font-size: 14px;
+    padding: 20px;
+    color: white;
+}
+#painel #painel2 div img{
+    margin-top: 15px;
+}
+#painel #painel2 #divcentral{
+    width: 350px;
+    height: 250px;
+    margin: -30px -20px;
+    padding: 70px 20px;
+    background-color: #688293;
+    position: relative;
+}
+
+    /*Sobre*/
+
+#sobre{
+    display: flex;
+    flex-direction: row;
+    margin: 80px auto;
+}
+#sobre #divfoto{
+    margin-right: 20px;
+}
+#sobre #divsobre{
+    flex-direction: column;
+    width: 450px;
+    text-align: justify;
+}
+#sobre #divsobre h2{
+    color: #698293;
+}
+#sobre #central{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+    /*Videos*/
+#video > div{
+    text-align: center;
+}
+#video div > div{
+    width: 400px;
+    height: 300px;
+    background-color: #CCCCD1;
+    display: inline-block;
+    margin: 3px 10px;
+}
+
+    /*Tratamento*/
+
+#tratamentos h2{
+    color: #688293;
+    text-align: center;
+    margin: 100px 0;
+}
+#tratamentos > div{
+    width: 33.3%;
+    display: inline-block;
+    margin-right: -4px;
+    padding: 5%;
+    text-align: justify;
+}
+#tratamentos > div h3{
+    color: #576975;
+    margin-bottom: 8px;
+}
+#tratamentos > div p{
+    color: #698293;
+    font-size: 13px;
+}
+
+    /*Depoimentos*/
+
+#depoimentos{
+    text-align: center;
+    margin-top: 100px ;
+}
+#depoimentos h2{
+    color: #688293;
+
+}
+#depoimentos p{
+    color: #848484;
+    font-size: 14px;
+    width: 300px;
+    margin: 60px auto;
+}
+#depoimentos #cliente img{
+    display: inline-block;
+
+}
+#depoimentos #cliente p{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+    /*Redes*/
+
+#redes #insta{
+    width: 100%;
+    height: 200px;
+    background-color: #9AA6AF;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+#redes #fotos{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+#redes #fotos > div{
+    width: 10%;
+    height: 200px;
+    background-color: #D2D2D2;
+    display: inline-block;
+    margin-right:-4px  ;
+    margin: 5px;
+}
+#redes #face{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: #576976;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+    /*contato*/
+
+#contato h2{
+    text-align: center;
+    color: #576976;
+    margin: 100px 0 50px 0;
+}
+#contato form{
+    width: 420px;
+    margin: 0 auto;
+}
+#contato form input{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0 30px 0;
+    padding: 10px;
+    border: 1px solid #576976;
+}
+#contato form #linha2 > div{
+    width: calc(50% - 3px);
+    display: inline-block;
+}
+#contato form #msg{
+    height: 120px;
+}
+#contato form #divbt{
+    width: 100px;
+    margin: 0 auto;
+}
+#contato form #divbt #bt{
+    background-color: #688293;
+    color: white;
+}
+
+    /*footer*/
+
+footer{
+    background-color: #688293;
+    color: white;
+    font-size: 13px;
+    text-align: right;
+}
+footer div{
+    margin: 50px 50px 0 0;
+    display: inline-block;
+    width: 20%;
+    height: 100px;
+}
+
+
+/*Responsividade*/
+
+@media screen and (max-width:1300px){
+    #painel #painel2 > div{
+        width: 200px;
+        height: 230px;
+    }
+    #painel #painel2 >div img{
+        display: none;
+    }
+    #redes #fotos > div{
+        width: 8%;
+    }
+}
+@media screen and (max-width:1050px){
+    #painel #painel1 > div{
+        width: 12%;
+        height: 80px;
+    }
+    #painel #painel2 #divcentral{
+        width: 300px;
+        height: 200px;
+        margin: 20px 0;
+        padding-top: 20px;
+    }
+    #sobre #central{
+        flex-direction: column;
+    }
+    #sobre #central #divfoto{
+        margin: 0 auto;
+    }
+    
+}
